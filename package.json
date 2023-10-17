@@ -11,17 +11,18 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.0",
-    "cookie-parser": "^1.4.5",
-    "dotenv": "^16.0.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.0",
     "express": "^4.17.1",
     "express-session": "^1.17.1",
+    "jsonwebtoken": "^9.0.0",
     "morgan": "^1.10.0",
     "mysql2": "^2.1.0",
     "nunjucks": "^3.2.1",
     "passport": "^0.6.0",
-    "passport-kakao": "1.0.0",
+    "passport-kakao": "^1.0.1",
     "passport-local": "^1.0.0",
-    "sequelize": "^6.19.2",
+    "sequelize": "^6.0.0",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
