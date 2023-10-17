@@ -1,24 +1,23 @@
-const { model } = require('mongoose');
 const Sequelize = require('sequelize');
 
 class Domain extends Sequelize.Model {
   static initiate(sequelize) {
-    Domain.initiate({
+    Domain.init({
       host: {
         type: Sequelize.STRING(80),
         allowNull: false,
       },
       type: {
-        type : Sequelize.ENUM('free', 'premium'),
+        type: Sequelize.ENUM('free', 'premium'),
         allowNull: false,
       },
       clientSecret: {
-        type : Sequelize.UUID,
+        type: Sequelize.UUID,
         allowNull: false,
       },
     }, {
       sequelize,
-      timestamp: true,
+      timestamps: true,
       paranoid: true,
       modelName: 'Domain',
       tableName: 'domains',
